@@ -63,6 +63,16 @@ namespace AppGestaoBrasileirao.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bandeiraBrasil {
+            get {
+                object obj = ResourceManager.GetObject("bandeiraBrasil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap brasileira2026 {
             get {
                 object obj = ResourceManager.GetObject("brasileira2026", resourceCulture);

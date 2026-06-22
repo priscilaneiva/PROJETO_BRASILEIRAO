@@ -58,7 +58,6 @@
             label1.Size = new Size(298, 195);
             label1.TabIndex = 1;
             label1.Text = "Sistema de\r\ncontrole de \r\n          times\r\n";
-            label1.Click += this.label1_Click;
             // 
             // panel1
             // 
