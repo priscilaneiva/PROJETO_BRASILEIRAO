@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppGestaoBrasileirao
 {
-    public partial class frmTelaConsultar : Form
+    public partial class frmTelaAtualizar : Form
     {
-        public frmTelaConsultar()
+        public frmTelaAtualizar()
         {
             InitializeComponent();
         }
