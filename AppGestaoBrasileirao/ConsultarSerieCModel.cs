@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AppGestaoBrasileirao
 {
-    public class ConsultarSerieAModel
+    public class ConsultarSerieCModel
     {
-        public int idSerieA { get; set; }
+        public int idSerieC { get; set; }
         public string? NomeClube { get; set; }
         public int PontosClube { get; set; }
         public int JogosClube { get; set; }

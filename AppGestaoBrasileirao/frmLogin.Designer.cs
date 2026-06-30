@@ -31,8 +31,8 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             panel1 = new Panel();
-            btnSair = new Button();
             btnEntrar = new Button();
+            btnSair = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -69,21 +69,6 @@
             panel1.Size = new Size(801, 109);
             panel1.TabIndex = 2;
             // 
-            // btnSair
-            // 
-            btnSair.BackColor = Color.Red;
-            btnSair.FlatAppearance.BorderColor = Color.Black;
-            btnSair.FlatStyle = FlatStyle.Flat;
-            btnSair.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSair.ForeColor = SystemColors.ButtonHighlight;
-            btnSair.Location = new Point(490, 33);
-            btnSair.Name = "btnSair";
-            btnSair.Size = new Size(125, 46);
-            btnSair.TabIndex = 0;
-            btnSair.Text = "Sair";
-            btnSair.TextAlign = ContentAlignment.MiddleRight;
-            btnSair.UseVisualStyleBackColor = false;
-            // 
             // btnEntrar
             // 
             btnEntrar.BackColor = Color.FromArgb(0, 192, 0);
@@ -98,6 +83,22 @@
             btnEntrar.Text = "Entrar";
             btnEntrar.TextAlign = ContentAlignment.MiddleRight;
             btnEntrar.UseVisualStyleBackColor = false;
+            btnEntrar.Click += btnEntrar_Click;
+            // 
+            // btnSair
+            // 
+            btnSair.BackColor = Color.Red;
+            btnSair.FlatAppearance.BorderColor = Color.Black;
+            btnSair.FlatStyle = FlatStyle.Flat;
+            btnSair.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSair.ForeColor = SystemColors.ButtonHighlight;
+            btnSair.Location = new Point(490, 33);
+            btnSair.Name = "btnSair";
+            btnSair.Size = new Size(125, 46);
+            btnSair.TabIndex = 0;
+            btnSair.Text = "Sair";
+            btnSair.TextAlign = ContentAlignment.MiddleRight;
+            btnSair.UseVisualStyleBackColor = false;
             // 
             // frmLogin
             // 

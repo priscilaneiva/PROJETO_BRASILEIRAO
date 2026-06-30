@@ -30,14 +30,14 @@
         {
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            pictureBox3 = new PictureBox();
             consultarTimes = new Label();
             textSerie = new Label();
-            listView1 = new ListView();
             btnConsultar2 = new Button();
+            cbSerie = new ComboBox();
+            dgvConsultar = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvConsultar).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -58,15 +58,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = SystemColors.ActiveBorder;
-            pictureBox3.Location = new Point(222, 111);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(472, 227);
-            pictureBox3.TabIndex = 4;
-            pictureBox3.TabStop = false;
             // 
             // consultarTimes
             // 
@@ -92,15 +83,6 @@
             textSerie.TabIndex = 6;
             textSerie.Text = "Série:";
             // 
-            // listView1
-            // 
-            listView1.BackColor = SystemColors.ActiveBorder;
-            listView1.Location = new Point(32, 223);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(108, 28);
-            listView1.TabIndex = 8;
-            listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // btnConsultar2
             // 
             btnConsultar2.BackColor = Color.GreenYellow;
@@ -113,6 +95,26 @@
             btnConsultar2.TabIndex = 9;
             btnConsultar2.Text = "Consultar";
             btnConsultar2.UseVisualStyleBackColor = false;
+            btnConsultar2.Click += btnConsultar2_Click;
+            // 
+            // cbSerie
+            // 
+            cbSerie.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbSerie.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbSerie.FormattingEnabled = true;
+            cbSerie.Items.AddRange(new object[] { "Selecione uma série...", "A", "B", "C", "D" });
+            cbSerie.Location = new Point(12, 233);
+            cbSerie.Name = "cbSerie";
+            cbSerie.Size = new Size(165, 26);
+            cbSerie.TabIndex = 10;
+            // 
+            // dgvConsultar
+            // 
+            dgvConsultar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvConsultar.Location = new Point(219, 137);
+            dgvConsultar.Name = "dgvConsultar";
+            dgvConsultar.Size = new Size(519, 259);
+            dgvConsultar.TabIndex = 11;
             // 
             // frmTelaConsultar
             // 
@@ -120,18 +122,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(dgvConsultar);
+            Controls.Add(cbSerie);
             Controls.Add(btnConsultar2);
-            Controls.Add(listView1);
             Controls.Add(textSerie);
             Controls.Add(consultarTimes);
-            Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Name = "frmTelaConsultar";
             Text = "frmTelaConsultar";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvConsultar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -140,10 +142,10 @@
 
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox3;
         private Label consultarTimes;
         private Label textSerie;
-        private ListView listView1;
         private Button btnConsultar2;
+        private ComboBox cbSerie;
+        private DataGridView dgvConsultar;
     }
 }
